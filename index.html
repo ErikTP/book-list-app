@@ -3,35 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bokvänner</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <section>
-      <form action="">
-        <h1>Bokvänner</h1>
-        <label for="">Title</label>
-        <input type="text" />
-        <label for="">Författare</label>
-        <input type="text" />
-        <label for="">Genre</label>
-        <input type="text" name="" id="" />
-        <label for="">Status</label>
-        <select name="" id="option">
-          <option value="tillgänglig">Tillgänglig</option>
-          <option value="utlånad">Utlånad</option>
-          <option value="reserverad">Reserverad</option>
-        </select>
-        <button type="submit">Lägg til bok</button>
-      </form>
-      <div class="list-border">
-      <ul>
-        <li>Cat</li>
-        <li>Dog</li>
-        <li>Mouse</li>
-      </ul>
+    <section class="app-section" id="app">
+      <form action="" id="inputForm">
+        <label class="form-label" for="inputItem">TITEL</label>
+        <input
+          type="text"
+          id="inputItem"
+          name="inputItem"
+          placeholder="Skriv här en titel..."
+        />
+        <label class="form-label" for="inputItem">FÖRFATTARE</label>
+        <input
+          type="text"
+          id="inputItem"
+          name="inputItem"
+          placeholder="Skriv här en författare..."
+        />
+        <label class="form-label" for="inputItem">GENRE</label>
+        <input
+          type="text"
+          id="inputItem"
+          name="inputItem"
+          placeholder="Skriv här en genre..."
+        />
+    <label class="form-label" for="Status">STATUS:</label>
+    <select class="select-status" id="Status">
+      <option value="Tillgänglig">Tillgänglig</option>
+      <option value="Utlånad">Utlånad</option>
+      <option value="Reserverad">Reserverad</option>
+    </select>
+    <div class="button-container">
+        <button class="button" type="submit">Lägg till</button>
     </div>
+      </form>
+       <ul id="itemList"></ul>
     </section>
   </body>
 </html>
+
