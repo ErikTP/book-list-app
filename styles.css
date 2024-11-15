@@ -60,13 +60,6 @@ ul {
         margin: auto;
     }
 
-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #000;
-}
-
 li {
     display: flex;
     justify-content: space-between;
@@ -74,4 +67,8 @@ li {
     font-size: 1.7rem;
     margin: 0.5rem;
     padding: var(--space-1x);
+}
+
+section{
+    display: flex;
 }
