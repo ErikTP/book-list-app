@@ -164,6 +164,18 @@ function loadItemsFromLocalStorage() {
     renderItems();
 }
 
+function loadAndDisplayBooks() {
+    const savedBooks = localStorage.getItem("booksArray");
+
+    if (savedBooks) {
+        booksArray = JSON.parse(savedBooks);
+    } else {
+        booksArray = []; 
+    }
+
+    renderBooks();
+}
+
 inputForm.addEventListener("submit", addItem);
 
 loadItemsFromLocalStorage();
