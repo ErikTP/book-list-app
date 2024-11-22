@@ -179,3 +179,7 @@ function loadAndDisplayBooks() {
 inputForm.addEventListener("submit", addItem);
 
 loadItemsFromLocalStorage();
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadAndDisplayBooks(); 
+});
