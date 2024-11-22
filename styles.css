@@ -1,7 +1,7 @@
 :root {
-  --background-color: rgb(1, 247, 255);
-  --primary-color: rgb(0, 119, 255);
-  --text-color: rgb(0, 0, 0);
+  --background-color: #fdf4e7;
+  --primary-color: #ebe7df;
+  --text-color: #322f2f;
   --space-1x: 1rem;
   --space-2x: 2rem;
 }
@@ -55,7 +55,7 @@ input[type="text"],
   width: 100%;
   padding: var(--space-1x);
   font-size: 2rem;
-  border: 3px solid var(--text-color);
+  border: 1px solid var(--text-color);
   color: var(--text-color);
   border-radius: 0.5rem;
   margin-top: var(--space-1x);
@@ -66,7 +66,7 @@ input[type="text"],
   background-color: var(--primary-color);
   color: var(--text-color);
   width: 100%;
-  border: 3px solid var(--text-color);
+  border: 1.5px solid var(--text-color);
   font-size: 2rem;
   font-weight: bolder;
   padding: 12px 0px;
@@ -78,9 +78,7 @@ input[type="text"],
 
 .button:hover,
 .button:focus {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 94, 255);
-  outline: solid #ff0095;
+  background-color: rgb(222, 218, 211);
 }
 
 .remove-button,
@@ -99,14 +97,13 @@ input[type="text"],
 }
 
 li {
-  background-color: rgb(255, 124, 77);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   margin: 0.5rem;
-  border: 3px solid var(--text-color);
+  border: 1px solid var(--text-color);
   padding: var(--space-1x);
   border-radius: 1rem;
   width: 95%;
@@ -121,8 +118,8 @@ li span {
 #itemList {
   flex: 1;
   max-width: 600px;
-  background-color: rgb(0, 204, 255);
-  border: 3px solid var(--text-color);
+  background-color: rgba(229, 218, 200, 0.533);
+  border: 1.5px solid var(--text-color);
   border-radius: 0.5rem;
   padding: var(--space-2x);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -140,15 +137,15 @@ li span {
 }
 
 .status-available {
-  background-color: #39d83f;
+  background-color: #86db87;
 }
 
 .status-reserved {
-  background-color: #ffeb3b;
+  background-color: #fff177;
 }
 
 .status-borrowed {
-  background-color: #f44336;
+  background-color: #ae0c00;
   color: #fff;
 }
 
